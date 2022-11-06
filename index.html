@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Title</title>
+    <link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="container__header">
+        <h1 class="header__title">Preferences</h1>
+        <p class="header__title-sub">On this page you can configure the main system parameters available for customization</p>
+    </header>
+    <main class="form-wrapper">
+        <form id="myForm" class="form__content">
+            <div class="form__content-inner-item">
+                <label class="label__content-item" for="company__title">Company Title</label>
+                <input id="company__title" placeholder="Default" type="text">
+            </div>
+            <div class="form__content-inner-item">
+                <span class="label__content-item">First Day</span>
+                <div class="select">
+                    <div id="select__day" class="select__head">Monday</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Monday</li>
+                        <li class="select__item">Sunday</li>
+                        <li class="select__item">System</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__content-inner-item">
+                <span class="label__content-item">Container Width</span>
+                <div class="select">
+                    <div id="select__width" class="select__head">Fixed</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Fixed</li>
+                        <li class="select__item">Auto</li>
+                        <li class="select__item">Fit-content</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__content-inner-item">
+                <span class="label__content-item">Homepage</span>
+                <div class="select">
+                    <div id="select__projects" class="select__head">Starred Projects</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">Starred Projects</li>
+                        <li class="select__item">Finish Projects</li>
+                        <li class="select__item">Default</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__content-inner-item">
+                <label class="label__content-item" for="size">Indent Size</label>
+                <input id="size" placeholder="Default" type="text">
+            </div>
+            <div class="form__content-inner-item">
+                <label class="label__content-item">Personal code</label>
+                <div id="code" class="container__personal-code">
+                    <input id="first__code" class="personal-code__item" maxlength="4" placeholder="0000" type="text">
+                    <input id="second__code" class="personal-code__item" maxlength="4" placeholder="0000" type="text">
+                    <input id="third__code" class="personal-code__item" maxlength="4" placeholder="0000" type="text">
+                    <span class="personal-code__tip-text">12&nbsp;digits</span>
+                </div>
+            </div>
+            <div class="form__content-inner-item-switcher">
+                <span class="label__content-item">Theme</span>
+                <section id="theme-switcher" class="theme-switcher">
+                    <div class="theme-switcher__item">
+                        <input checked type="radio" id="light" name="theme" value="light" class="switcher__input">
+                        <label for="light" class="switcher__input-label">Light</label>
+                    </div>
+                    <div class="theme-switcher__item">
+                        <input type="radio" id="dark" name="theme" value="dark" class="switcher__input">
+                        <label for="dark" class="switcher__input-label">Dark</label>
+                    </div>
+                </section>
+            </div>
+            <div class="form__content-inner-item-buttons">
+                <button type="button" id="save" class="save">Apply and Save</button>
+                <button type="reset" id="cancel" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer__aside">
+            <span>2020-2022</span>
+            <a href="#">Terms of Service</a>
+            <span>and</span>
+            <a href="#">Conditions</a>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
